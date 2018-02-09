@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat App</title>
+   <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="chat-container">
+    <div id="chat-window">
+      <div id="output"></div>
+      <div id="actions"></div>
+    </div>
+    <!-- user and message -->
+    <input id="username" type="text" placeholder="username">
+    <input id="message" type="text" placeholder="message">
+    <button id="send">Send</button>
+  </div>
+
+  <!--socket.io -->  
+ <script src="/socket.io/socket.io.js"></script>
+ <script src="/chat.js"></script>
+</body>
+</html>
